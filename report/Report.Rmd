@@ -107,7 +107,7 @@ graph2 = ggplot(data = All_data_long_date_country, mapping = aes(x = date, y = l
     labs(x = "Date", y = "Number of cases (in log form)", 
          title = "Change of number of cases (in log form) by Country"))
 ```
-![Change in the number of cases by country.](./fig2.jpeg)
+![Change in the number of cases by country.](../figures/fig2.jpeg)
 We can see that the trends in different countries are similar.\
 
 ```{r plot2, fig.cap="Change in rate by country", out.width="60%", fig.align='center'}
@@ -116,7 +116,7 @@ graph3 = ggplot(data = All_data_long_date_country, mapping = aes(x = date, y = n
     labs(x = "Date", y = "Incident Rate", 
          title = "Change of Incident Rate (cases per total population) by Country"))
 ```
-![Change in rate by country.](./fig3.jpeg)
+![Change in rate by country.](../figures/fig3.jpeg)
 That being said, the change in incident rates differs among different countries.
 
 
@@ -152,7 +152,7 @@ spark_All_data_long_country = copy_to(sc, All_data_long_country, overwrite = TRU
 model = spark_All_data_long_country %>% ml_linear_regression(log_n_case ~ .) 
 summary(model)
 ```
-![Summary of regression analysis.](./ml_regression_summary.JPG)
+![Summary of regression analysis.](../figures/ml_regression_summary.JPG)
 
 We can see that log number of cases increase with both population and number of days since COVID begins, which makes sence as there is a higher chance of infection for countries with denser population and longer time into the pandemic. For countries, we can see that except China other countries have more cases than the US. The R-squared statistic of the model is 0.6418 which means that 64.18\% of the variation in the dependent variable can be attributed to the independent variables. In other words, this model is a fairly good fit.
 
