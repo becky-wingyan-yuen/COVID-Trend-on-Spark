@@ -20,18 +20,12 @@ In this project we aim to investigate the trend of COVID-19 cases over the past 
 - [code](./code): `R` code to reproduce the graphs.
 - [data](./data): downloaded and processed data.
 - [figures](./figures): output graphs.
+- [report](./report): rmarkdown file for generating report.
 
 
 ### Main findings 
 
-![Alt text](./figures/fig1.jpeg)
-We can see that overall the number of cases has been increasing since 2020.
-
-![Alt text](./figures/fig2.jpeg)
-The trends in different countries are consistent with the overall trend.
-
-![Alt text](./figures/fig3.jpeg)
-That being said, the change in incident rates differs among different countries.
+Details can be found in the [report](./report/report.pdf).
 
 
 ### Session Info
