@@ -25,7 +25,7 @@ In this project we aim to investigate the trend of COVID-19 cases over the past 
 
 ### Main findings 
 
-Details can be found in the [report](./report/report.pdf).
+Details can be found in the [report](./report/Report.pdf).
 
 
 ### Session Info
